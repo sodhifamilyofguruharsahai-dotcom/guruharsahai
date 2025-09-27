@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sodhi Family</title>
+  <style>
+    /* Reset default */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7fb;
+      color: #333;
+    }
+
+    /* Navbar */
+    nav {
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      padding: 10px 30px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    nav img {
+      height: 55px;
+      border-radius: 8px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      font-size: 18px;
+      text-decoration: none;
+      position: relative;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 0%;
+      height: 3px;
+      background: #ffdd00;
+      transition: width 0.3s;
+      border-radius: 3px;
+    }
+
+    .nav-links a:hover {
+      color: #ffdd00;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    /* Images */
+    .image-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 40px 20px;
+      flex-wrap: wrap;
+    }
+
+    .image-container img {
+      width: 48%;
+      max-width: 600px;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+    }
+
+    .image-container img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.3);
+    }
+
+    hr {
+      border: none;
+      border-top: 3px solid #6a11cb;
+      margin: 30px auto;
+      width: 80%;
+      border-radius: 2px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .image-container img {
+        width: 100%;
+      }
+      .nav-links {
+        gap: 15px;
+      }
+      .nav-links a {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Elfsight widget -->
+  <div class="elfsight-app-d13ac97e-4518-4e7c-8d2b-298cafdbc585" data-elfsight-app-lazy></div>
+  <script src="https://elfsightcdn.com/platform.js" async></script>
+
+  <!-- Navbar -->
+  <nav>
+    <img class="aa" src="logo family ..JPG" alt="Family Logo">
+    <div class="nav-links">
+      <a href="about.html">ABOUT</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="history.html">HISTORY</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
+  </nav>
+
+  <!-- Images Section -->
+  <div class="image-container">
+    <img src="gurudwara2.jfif" alt="Gurudwara">
+    <img src="gurudwara2.jfif" alt="Gurudwara">
+  </div>
+
+  <hr>
+
+</body>
+</html>
