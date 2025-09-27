@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Contact Us</title>
+  <style>
+    nav {
+      background: linear-gradient(90deg, #4facfe, #00f2fe);
+      padding: 12px 20px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .nav-links a {
+      padding: 8px 14px;
+      color: white;
+      font-size: 1.1rem;
+      margin-left: 12px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      font-family: "Segoe UI", sans-serif;
+    }
+    .nav-links a:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: translateY(-2px);
+    }
+    .aa {
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid white;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      padding: 30px;
+      transition: transform 0.3s ease;
+    }
+    .glass-card:hover {
+      transform: scale(1.02);
+    }
+    button {
+      background: linear-gradient(90deg, #667eea, #764ba2);
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      background: linear-gradient(90deg, #764ba2, #667eea);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 min-h-screen">
+
+  <!-- Navbar -->
+  <nav>
+    <img class="aa" src="logo family ..JPG" alt="Logo">
+    <div class="nav-links">
+      <a href="about.html">ABOUT</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="history.html">HISTORY</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="text-gray-700 body-font">
+    <div class="container px-5 py-20 mx-auto">
+      <div class="flex flex-col text-center w-full mb-12">
+        <h1 class="sm:text-4xl text-3xl font-extrabold title-font mb-4 text-gray-900">📩 Contact Us</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-lg text-gray-700">We’d love to hear from you. Fill out the form below or reach us directly.</p>
+      </div>
+
+      <!-- Grid Layout -->
+      <div class="grid lg:grid-cols-2 gap-10">
+        
+        <!-- Contact Form -->
+        <div class="glass-card">
+          <form>
+            <div class="grid grid-cols-2 gap-6">
+              <div>
+                <label for="name" class="block text-gray-700 font-semibold">Name</label>
+                <input type="text" id="name" name="name"
+                  class="w-full rounded-lg border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-300 py-2 px-3 mt-1">
+              </div>
+              <div>
+                <label for="email" class="block text-gray-700 font-semibold">Email</label>
+                <input type="email" id="email" name="email"
+                  class="w-full rounded-lg border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-300 py-2 px-3 mt-1">
+              </div>
+            </div>
+            <div class="mt-6">
+              <label for="message" class="block text-gray-700 font-semibold">Message</label>
+              <textarea id="message" name="message"
+                class="w-full rounded-lg border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-300 py-2 px-3 mt-1 h-36"></textarea>
+            </div>
+            <div class="mt-6">
+              <button class="w-full text-white py-3 px-6 rounded-lg shadow-lg text-lg font-semibold">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="glass-card flex flex-col justify-center text-center">
+          <h2 class="text-2xl font-bold mb-4 text-gray-800">📍 Get in Touch</h2>
+          <p class="text-lg text-gray-700">We are always ready to help and respond as soon as possible.</p>
+          <div class="mt-6">
+            <p class="text-lg font-medium text-gray-800">📧 sodhifamilyofguruharsahai@gmail.com</p>
+            <p class="text-gray-600 mt-2">📍 Faridabad, NIT 1 (Haryana)</p>
+          </div>
+          <div class="flex justify-center mt-6 space-x-6 text-gray-600">
+            <a href="#"><i class="fab fa-facebook-f text-2xl"></i></a>
+            <a href="#"><i class="fab fa-twitter text-2xl"></i></a>
+            <a href="#"><i class="fab fa-instagram text-2xl"></i></a>
+            <a href="#"><i class="fab fa-whatsapp text-2xl"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FontAwesome for social icons -->
+  <script src="https://kit.fontawesome.com/4e5a96f7b5.js" crossorigin="anonymous"></script>
+</body>
+</html>
